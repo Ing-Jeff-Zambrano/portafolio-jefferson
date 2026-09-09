@@ -1,0 +1,145 @@
+/* ---------- HEADER ---------- */
+
+body > header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    min-height: var(--header-height);
+
+    background-color: var(--color-surface);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+body > header nav {
+    width: min(
+        calc(100% - (var(--space-xl) * 2)),
+        var(--container-width)
+    );
+
+    min-height: var(--header-height);
+
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+}
+
+body > header nav ul {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+
+/* ---------- MAIN ---------- */
+
+main {
+    width: min(
+        calc(100% - (var(--space-xl) * 2)),
+        var(--container-width)
+    );
+
+    margin-inline: auto;
+}
+
+
+/* ---------- SECTIONS ---------- */
+
+main > section {
+    padding-block: var(--space-3xl);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+section > header {
+    margin-bottom: var(--space-xl);
+}
+
+section > header > p {
+    margin-bottom: var(--space-sm);
+
+    color: var(--color-primary);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+
+/* ---------- CONTENT ---------- */
+
+section article + article {
+    margin-top: var(--space-lg);
+}
+
+section aside {
+    margin-top: var(--space-xl);
+}
+
+
+/* ---------- HERO ---------- */
+
+#inicio {
+    min-height: calc(100vh - var(--header-height));
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3xl);
+}
+
+#inicio > div {
+    max-width: 680px;
+}
+
+#inicio figure {
+    margin: 0;
+
+    text-align: center;
+}
+
+#inicio figure > div {
+    width: 220px;
+    height: 220px;
+
+    display: grid;
+    place-items: center;
+
+    color: var(--color-text-inverse);
+    background-color: var(--color-primary);
+
+    border-radius: var(--radius-full);
+
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+
+    box-shadow: var(--shadow-lg);
+}
+
+#inicio figcaption {
+    margin-top: var(--space-md);
+
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
+
+
+/* ---------- FOOTER ---------- */
+
+body > footer {
+    padding: var(--space-2xl) var(--space-xl);
+
+    text-align: center;
+
+    background-color: var(--color-secondary);
+}
+
+body > footer p {
+    color: var(--color-text-inverse);
+}

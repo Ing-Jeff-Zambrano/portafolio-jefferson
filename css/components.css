@@ -1,0 +1,132 @@
+/* ---------- BUTTONS ---------- */
+
+button,
+main a {
+    transition:
+        background-color var(--transition-base),
+        color var(--transition-base),
+        border-color var(--transition-base),
+        transform var(--transition-base);
+}
+
+button {
+    padding: var(--space-sm) var(--space-lg);
+
+    color: var(--color-text-inverse);
+    background-color: var(--color-primary);
+
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-md);
+
+    font-weight: var(--font-weight-semibold);
+}
+
+button:hover {
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+}
+
+
+/* ---------- CARDS ---------- */
+
+article {
+    padding: var(--space-xl);
+
+    background-color: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform var(--transition-base),
+        box-shadow var(--transition-base),
+        border-color var(--transition-base);
+}
+
+article:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-border-strong);
+}
+
+
+/* ---------- ASIDE ---------- */
+
+aside {
+    padding: var(--space-xl);
+
+    background-color: var(--color-surface-secondary);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+}
+
+
+/* ---------- FORMS ---------- */
+
+form {
+    padding: var(--space-xl);
+
+    background-color: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+}
+
+form > div {
+    margin-bottom: var(--space-lg);
+}
+
+label {
+    display: block;
+
+    margin-bottom: var(--space-sm);
+
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: var(--space-md);
+
+    color: var(--color-text);
+    background-color: var(--color-surface);
+
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-md);
+
+    outline: none;
+
+    transition:
+        border-color var(--transition-fast),
+        box-shadow var(--transition-fast);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-soft);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ---------- KEYBOARD ACCESSIBILITY ---------- */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
