@@ -130,3 +130,94 @@ textarea:focus-visible {
     outline: 3px solid var(--color-primary);
     outline-offset: 3px;
 }
+
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+
+    padding: var(--space-sm) var(--space-lg);
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+}
+
+.button--primary {
+    color: var(--color-text-inverse);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.button--primary:hover {
+    color: var(--color-text-inverse);
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+}
+
+.button--secondary {
+    color: var(--color-text);
+    background-color: var(--color-surface);
+    border-color: var(--color-border-strong);
+}
+
+.button--secondary:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.section-eyebrow {
+    margin-bottom: var(--space-sm);
+
+    color: var(--color-primary);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.section-description {
+    max-width: 680px;
+    margin-bottom: 0;
+
+    color: var(--color-text-secondary);
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.tag-list li {
+    padding: var(--space-xs) var(--space-md);
+
+    color: var(--color-primary);
+    background-color: var(--color-primary-soft);
+
+    border-radius: var(--radius-full);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.status-badge {
+    display: inline-flex;
+
+    padding: var(--space-xs) var(--space-md);
+
+    color: var(--color-success);
+    background-color: var(--color-success-soft);
+
+    border-radius: var(--radius-full);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+}

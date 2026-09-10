@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Portafolio profesional de Jefferson Antonio Zambrano Jama, estudiante de Ingeniería de Software y desarrollador web."
-    >
+    <meta name="description"
+        content="Portafolio profesional de Jefferson Antonio Zambrano Jama, estudiante de Ingeniería de Software y desarrollador web.">
 
     <title>Jefferson Zambrano | Portafolio</title>
 
@@ -21,7 +19,7 @@
 
 <body>
 
-    
+
     <header>
         <nav aria-label="Navegación principal">
             <a href="#inicio" aria-label="Ir al inicio">
@@ -42,163 +40,264 @@
                 Tema
             </button>
 
-            <button
-                type="button"
-                aria-label="Abrir menú de navegación"
-                aria-expanded="false"
-            >
+            <button type="button" aria-label="Abrir menú de navegación" aria-expanded="false">
                 Menú
             </button>
         </nav>
     </header>
 
 
-    
+
     <main>
-        <section id="inicio">
-            <div>
-                <p>Hola, soy</p>
+        <section id="inicio" class="hero">
+            <div class="hero__content">
+                <p class="section-eyebrow">Hola, soy</p>
 
-                <h1>Jefferson Antonio Zambrano Jama</h1>
+                <h1 class="hero__title">
+                    Jefferson Antonio
+                    <span>Zambrano Jama</span>
+                </h1>
 
-                <p>
-                    Estudiante de Ingeniería de Software |
+                <p class="hero__role">
+                    Estudiante de Ingeniería de Software
+                    <span aria-hidden="true">•</span>
                     Desarrollador Web
                 </p>
 
-                <p>
+                <p class="hero__description">
                     Desarrollo soluciones web y participo en el mantenimiento
                     de aplicaciones empresariales, con interés en arquitectura
                     de software, bases de datos y procesamiento de datos.
                 </p>
 
-                <div>
-                    <a href="#proyectos">Ver proyectos</a>
-                    <a href="#sobre-mi">Conocer más</a>
+                <div class="hero__actions">
+                    <a href="#proyectos" class="button button--primary">
+                        Ver proyectos
+                    </a>
+
+                    <a href="#sobre-mi" class="button button--secondary">
+                        Conocer más
+                    </a>
                 </div>
+
+                <ul class="hero__highlights" aria-label="Resumen profesional">
+                    <li>
+                        <strong>Ingeniería de Software</strong>
+                        <span>Universidad Estatal de Milagro</span>
+                    </li>
+
+                    <li>
+                        <strong>Desarrollo Web</strong>
+                        <span>Experiencia empresarial</span>
+                    </li>
+
+                    <li>
+                        <strong>Datos y arquitectura</strong>
+                        <span>Área de crecimiento</span>
+                    </li>
+                </ul>
             </div>
 
-            <figure>
-                <div aria-hidden="true">JZ</div>
+            <figure class="profile-visual">
+                <div class="profile-visual__avatar" aria-hidden="true">
+                    JZ
+                </div>
 
                 <figcaption>
-                    Jefferson Zambrano — Desarrollador Web
+                    Jefferson Zambrano
+                    <span>Software & Web Development</span>
                 </figcaption>
             </figure>
         </section>
 
 
-        <section id="sobre-mi">
-            <header>
-                <p>Perfil</p>
+        <section id="sobre-mi" class="section">
+            <header class="section-header">
+                <p class="section-eyebrow">Perfil</p>
                 <h2>Sobre mí</h2>
+
+                <p class="section-description">
+                    Formación, experiencia e intereses que definen mi perfil
+                    profesional como desarrollador.
+                </p>
             </header>
 
-            <article>
-                <h3>Mi perfil profesional</h3>
+            <div class="about-layout">
+                <article class="about-card">
+                    <h3>Mi perfil profesional</h3>
 
-                <p>
-                    Soy estudiante de Ingeniería de Software en la
-                    Universidad Estatal de Milagro y desarrollador web
-                    con experiencia en desarrollo, mantenimiento y soporte
-                    de aplicaciones empresariales.
-                </p>
+                    <p>
+                        Soy estudiante de Ingeniería de Software en la
+                        Universidad Estatal de Milagro y desarrollador web
+                        con experiencia en desarrollo, mantenimiento y soporte
+                        de aplicaciones empresariales.
+                    </p>
 
-                <p>
-                    He participado en proyectos orientados a la gestión
-                    de información, generación de reportes y seguimiento
-                    de procesos empresariales.
-                </p>
+                    <p>
+                        He participado en proyectos orientados a la gestión
+                        de información, generación de reportes y seguimiento
+                        de procesos empresariales.
+                    </p>
 
-                <p>
-                    Actualmente continúo fortaleciendo mis conocimientos
-                    en desarrollo de software, procesamiento de grandes
-                    volúmenes de datos, inteligencia artificial y nuevas
-                    tecnologías.
-                </p>
-            </article>
+                    <p>
+                        Actualmente continúo fortaleciendo mis conocimientos
+                        en arquitectura de software, procesamiento de grandes
+                        volúmenes de datos, inteligencia artificial y nuevas
+                        tecnologías.
+                    </p>
 
-            <aside aria-label="Áreas de interés">
-                <h3>Áreas de interés</h3>
+                    <div class="education-info">
+                        <span class="education-info__label">Formación actual</span>
 
-                <ul>
-                    <li>Desarrollo Web</li>
-                    <li>Backend</li>
-                    <li>Bases de Datos</li>
-                    <li>Arquitectura de Software</li>
-                    <li>Inteligencia Artificial</li>
-                    <li>Ingeniería y análisis de datos</li>
-                </ul>
-            </aside>
+                        <strong>Ingeniería de Software</strong>
+
+                        <span>Universidad Estatal de Milagro</span>
+                    </div>
+                </article>
+
+                <aside class="interests-card" aria-label="Áreas de interés">
+                    <h3>Áreas de interés</h3>
+
+                    <p>
+                        Áreas en las que actualmente desarrollo y fortalezco
+                        mis conocimientos.
+                    </p>
+
+                    <ul class="tag-list">
+                        <li>Desarrollo Web</li>
+                        <li>Backend</li>
+                        <li>Bases de Datos</li>
+                        <li>Arquitectura de Software</li>
+                        <li>Inteligencia Artificial</li>
+                        <li>Ingeniería y análisis de datos</li>
+                    </ul>
+                </aside>
+            </div>
         </section>
 
-
-        <section id="experiencia">
-            <header>
-                <p>Trayectoria</p>
+        <section id="experiencia" class="section">
+            <header class="section-header">
+                <p class="section-eyebrow">Trayectoria</p>
                 <h2>Experiencia</h2>
+
+                <p class="section-description">
+                    Experiencia profesional y prácticas desarrolladas durante
+                    mi formación en Ingeniería de Software.
+                </p>
             </header>
 
-            <article>
-                <p>Agosto 2026 — Actualidad</p>
+            <div class="timeline">
 
-                <h3>Desarrollador Web</h3>
+                <article class="timeline-item">
+                    <div class="timeline-item__marker" aria-hidden="true"></div>
 
-                <p>
-                    <strong>
-                        Soluciones Ambientales Totales Sambito S.A.
-                    </strong>
-                </p>
+                    <div class="timeline-item__content">
+                        <div class="timeline-item__header">
+                            <div>
+                                <p class="timeline-item__date">
+                                    Agosto 2026 — Actualidad
+                                </p>
 
-                <p>Departamento de TIC</p>
+                                <h3>Desarrollador Web</h3>
+                            </div>
 
-                <p>
-                    Desarrollo, mantenimiento y soporte de aplicaciones
-                    empresariales. Implementación de mejoras funcionales,
-                    corrección de inconsistencias, soporte a usuarios e
-                    inducciones para el uso y manejo de los sistemas.
-                </p>
-            </article>
+                            <span class="status-badge">
+                                Actual
+                            </span>
+                        </div>
 
-            <article>
-                <p>Mayo 2026 — Julio 2026</p>
+                        <p class="timeline-item__company">
+                            Soluciones Ambientales Totales Sambito S.A.
+                        </p>
 
-                <h3>Pasante de Desarrollo de Software</h3>
+                        <p class="timeline-item__area">
+                            Departamento de TIC
+                        </p>
 
-                <p>
-                    <strong>
-                        Soluciones Ambientales Totales Sambito S.A.
-                    </strong>
-                </p>
+                        <p>
+                            Desarrollo, mantenimiento y soporte de aplicaciones
+                            empresariales. Implementación de mejoras funcionales,
+                            corrección de inconsistencias, soporte a usuarios e
+                            inducciones para el uso y manejo de los sistemas.
+                        </p>
 
-                <p>Departamento de TIC</p>
+                        <ul class="tag-list" aria-label="Tecnologías utilizadas">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>PHP</li>
+                            <li>PostgreSQL</li>
+                            <li>Eloquent ORM</li>
+                        </ul>
+                    </div>
+                </article>
 
-                <p>
-                    Desarrollo y mantenimiento de módulos empresariales,
-                    con participación en funcionalidades relacionadas
-                    con la generación y presentación de reportes.
-                </p>
-            </article>
+                <article class="timeline-item">
+                    <div class="timeline-item__marker" aria-hidden="true"></div>
 
-            <article>
-                <p>Septiembre 2025 — Diciembre 2025</p>
+                    <div class="timeline-item__content">
+                        <p class="timeline-item__date">
+                            Mayo 2026 — Julio 2026
+                        </p>
 
-                <h3>
-                    Pasante de Desarrollo y Mantenimiento de Software
-                </h3>
+                        <h3>Pasante de Desarrollo de Software</h3>
 
-                <p>
-                    <strong>Comisariato El Constructor</strong>
-                </p>
+                        <p class="timeline-item__company">
+                            Soluciones Ambientales Totales Sambito S.A.
+                        </p>
 
-                <p>
-                    Participación en actividades de mantenimiento y mejora
-                    de aplicaciones, colaborando en interfaces,
-                    funcionalidades y gestión de información.
-                </p>
-            </article>
+                        <p class="timeline-item__area">
+                            Departamento de TIC
+                        </p>
+
+                        <p>
+                            Desarrollo y mantenimiento de módulos empresariales,
+                            con participación en funcionalidades relacionadas
+                            con la generación y presentación de reportes.
+                        </p>
+
+                        <ul class="tag-list" aria-label="Tecnologías utilizadas">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>PHP</li>
+                            <li>PostgreSQL</li>
+                            <li>Eloquent ORM</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-item__marker" aria-hidden="true"></div>
+
+                    <div class="timeline-item__content">
+                        <p class="timeline-item__date">
+                            Septiembre 2025 — Diciembre 2025
+                        </p>
+
+                        <h3>
+                            Pasante de Desarrollo y Mantenimiento de Software
+                        </h3>
+
+                        <p class="timeline-item__company">
+                            Comisariato El Constructor
+                        </p>
+
+                        <p>
+                            Participación en actividades de mantenimiento y mejora
+                            de aplicaciones, colaborando en interfaces,
+                            funcionalidades y gestión de información.
+                        </p>
+
+                        <ul class="tag-list" aria-label="Tecnologías utilizadas">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>React</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
         </section>
-
 
         <section id="skills">
             <header>
@@ -441,33 +540,19 @@
                 <div>
                     <label for="nombre">Nombre</label>
 
-                    <input
-                        type="text"
-                        id="nombre"
-                        name="nombre"
-                        autocomplete="name"
-                    >
+                    <input type="text" id="nombre" name="nombre" autocomplete="name">
                 </div>
 
                 <div>
                     <label for="correo">Correo electrónico</label>
 
-                    <input
-                        type="email"
-                        id="correo"
-                        name="correo"
-                        autocomplete="email"
-                    >
+                    <input type="email" id="correo" name="correo" autocomplete="email">
                 </div>
 
                 <div>
                     <label for="mensaje">Mensaje</label>
 
-                    <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        rows="5"
-                    ></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
                 </div>
 
                 <button type="submit">
