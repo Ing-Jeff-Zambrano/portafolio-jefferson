@@ -79,7 +79,8 @@ section article + article {
 }
 
 .skills-grid > article,
-.projects-grid > article {
+.projects-grid > article,
+.ds-layout article {
     margin-top: 0;
 }
 
@@ -140,13 +141,27 @@ section aside {
 body > footer {
     padding: var(--space-2xl) var(--space-xl);
 
-    text-align: center;
-
     background-color: var(--color-secondary);
 }
 
+.footer-inner {
+    width: min(100%, var(--container-width));
+    margin-inline: auto;
+
+    display: grid;
+    gap: var(--space-sm);
+
+    text-align: center;
+}
+
 body > footer p {
+    margin-bottom: 0;
+
     color: var(--color-text-inverse);
+}
+
+.footer-copy {
+    font-size: var(--font-size-sm);
 }
 
 /* =====================================================
@@ -301,6 +316,31 @@ body > footer p {
 
 .education-info strong {
     color: var(--color-text);
+}
+
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    gap: var(--space-xl);
+    align-items: start;
+}
+
+.contact-info {
+    margin: 0;
+}
+
+.contact-links {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.contact-links a {
+    font-weight: var(--font-weight-semibold);
 }
 
 

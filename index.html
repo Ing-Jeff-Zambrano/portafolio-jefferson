@@ -556,129 +556,289 @@
         </section>
 
 
-        <section id="design-system">
-            <header>
-                <p>Sistema visual</p>
+        <section id="design-system" class="section">
+            <header class="section-header">
+                <p class="section-eyebrow">Sistema visual</p>
                 <h2>Design System</h2>
+
+                <p class="section-description">
+                    Paleta, tipografía, espaciado y componentes reutilizables
+                    que dan consistencia visual a este portafolio.
+                </p>
             </header>
 
-            <p>
-                Documentación de los elementos visuales y componentes
-                reutilizables utilizados en este portafolio.
-            </p>
+            <div class="ds-layout">
 
-            <article>
-                <h3>Colores</h3>
-                <p>
-                    Paleta de colores principal y secundaria del portafolio.
-                </p>
-            </article>
+                <article class="ds-group">
+                    <h3>Paleta de colores</h3>
 
-            <article>
-                <h3>Tipografía</h3>
-                <p>
-                    Jerarquía tipográfica utilizada para títulos,
-                    subtítulos y contenido.
-                </p>
-            </article>
+                    <p>
+                        Colores principales definidos en el sistema visual
+                        y utilizados a lo largo del portafolio.
+                    </p>
 
-            <article>
-                <h3>Espaciado</h3>
-                <p>
-                    Escala de espaciados utilizada para mantener
-                    consistencia visual.
-                </p>
-            </article>
+                    <ul class="ds-color-grid">
+                        <li class="ds-swatch">
+                            <span class="ds-swatch__color ds-swatch__color--primary"></span>
+                            <span class="ds-swatch__name">Primary</span>
+                        </li>
 
-            <article>
-                <h3>Componentes</h3>
+                        <li class="ds-swatch">
+                            <span class="ds-swatch__color ds-swatch__color--secondary"></span>
+                            <span class="ds-swatch__name">Secondary</span>
+                        </li>
 
-                <button type="button">
-                    Botón primario
-                </button>
+                        <li class="ds-swatch">
+                            <span class="ds-swatch__color ds-swatch__color--accent"></span>
+                            <span class="ds-swatch__name">Accent</span>
+                        </li>
 
-                <button type="button">
-                    Botón secundario
-                </button>
-            </article>
+                        <li class="ds-swatch">
+                            <span class="ds-swatch__color ds-swatch__color--background"></span>
+                            <span class="ds-swatch__name">Background</span>
+                        </li>
+
+                        <li class="ds-swatch">
+                            <span class="ds-swatch__color ds-swatch__color--surface"></span>
+                            <span class="ds-swatch__name">Surface</span>
+                        </li>
+
+                        <li class="ds-swatch">
+                            <span class="ds-swatch__color ds-swatch__color--text"></span>
+                            <span class="ds-swatch__name">Text</span>
+                        </li>
+
+                        <li class="ds-swatch">
+                            <span class="ds-swatch__color ds-swatch__color--success"></span>
+                            <span class="ds-swatch__name">Success</span>
+                        </li>
+
+                        <li class="ds-swatch">
+                            <span class="ds-swatch__color ds-swatch__color--warning"></span>
+                            <span class="ds-swatch__name">Warning</span>
+                        </li>
+
+                        <li class="ds-swatch">
+                            <span class="ds-swatch__color ds-swatch__color--error"></span>
+                            <span class="ds-swatch__name">Error</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <div class="ds-layout__split">
+
+                    <article class="ds-group">
+                        <h3>Tipografía</h3>
+
+                        <p>
+                            Jerarquía tipográfica utilizada para títulos,
+                            subtítulos y contenido.
+                        </p>
+
+                        <div class="ds-type-stack">
+                            <div class="ds-type-item">
+                                <span class="ds-caption">Título principal</span>
+                                <p class="ds-type ds-type--display">Jefferson Zambrano</p>
+                            </div>
+
+                            <div class="ds-type-item">
+                                <span class="ds-caption">Título de sección</span>
+                                <p class="ds-type ds-type--section">Proyectos destacados</p>
+                            </div>
+
+                            <div class="ds-type-item">
+                                <span class="ds-caption">Subtítulo</span>
+                                <p class="ds-type ds-type--subtitle">Desarrollador Web</p>
+                            </div>
+
+                            <div class="ds-type-item">
+                                <span class="ds-caption">Texto normal</span>
+                                <p class="ds-type ds-type--body">
+                                    Desarrollo soluciones web y participo en el
+                                    mantenimiento de aplicaciones empresariales.
+                                </p>
+                            </div>
+
+                            <div class="ds-type-item">
+                                <span class="ds-caption">Texto pequeño</span>
+                                <p class="ds-type ds-type--small">
+                                    Universidad Estatal de Milagro
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="ds-group">
+                        <h3>Espaciado</h3>
+
+                        <p>
+                            Escala de espaciados utilizada para mantener
+                            consistencia visual.
+                        </p>
+
+                        <ul class="ds-space-list">
+                            <li>
+                                <span class="ds-space-label">xs</span>
+                                <span class="ds-space-bar ds-space-bar--xs" aria-hidden="true"></span>
+                            </li>
+
+                            <li>
+                                <span class="ds-space-label">sm</span>
+                                <span class="ds-space-bar ds-space-bar--sm" aria-hidden="true"></span>
+                            </li>
+
+                            <li>
+                                <span class="ds-space-label">md</span>
+                                <span class="ds-space-bar ds-space-bar--md" aria-hidden="true"></span>
+                            </li>
+
+                            <li>
+                                <span class="ds-space-label">lg</span>
+                                <span class="ds-space-bar ds-space-bar--lg" aria-hidden="true"></span>
+                            </li>
+
+                            <li>
+                                <span class="ds-space-label">xl</span>
+                                <span class="ds-space-bar ds-space-bar--xl" aria-hidden="true"></span>
+                            </li>
+
+                            <li>
+                                <span class="ds-space-label">2xl</span>
+                                <span class="ds-space-bar ds-space-bar--2xl" aria-hidden="true"></span>
+                            </li>
+                        </ul>
+                    </article>
+
+                </div>
+
+                <article class="ds-group">
+                    <h3>Componentes</h3>
+
+                    <p>
+                        Componentes reutilizados en las secciones del portafolio.
+                    </p>
+
+                    <div class="ds-component-row">
+                        <button type="button" class="button button--primary">
+                            Botón primario
+                        </button>
+
+                        <button type="button" class="button button--secondary">
+                            Botón secundario
+                        </button>
+
+                        <span class="status-badge">
+                            Actual
+                        </span>
+                    </div>
+
+                    <ul class="tag-list" aria-label="Ejemplo de etiquetas">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+
+                    <article class="ds-sample-card">
+                        <h3>Ejemplo de tarjeta</h3>
+
+                        <p>
+                            Las tarjetas del portafolio utilizan superficie,
+                            borde, radio y sombra del sistema visual.
+                        </p>
+                    </article>
+                </article>
+
+            </div>
         </section>
 
 
-        <section id="contacto">
-            <header>
-                <p>Comunicación</p>
+        <section id="contacto" class="section">
+            <header class="section-header">
+                <p class="section-eyebrow">Comunicación</p>
                 <h2>Contacto</h2>
+
+                <p class="section-description">
+                    Puedes contactarme para conversar sobre desarrollo,
+                    proyectos o colaboración profesional.
+                </p>
             </header>
 
-            <p>
-                Puedes contactarme para conversar sobre desarrollo,
-                proyectos o colaboración profesional.
-            </p>
+            <div class="contact-layout">
 
-            <aside aria-label="Redes profesionales">
-                <h3>Encuéntrame en</h3>
+                <aside class="contact-info" aria-label="Redes profesionales">
+                    <h3>Encuéntrame en</h3>
 
-                <ul>
-                    <li>
-                        <a href="#" aria-label="GitHub de Jefferson Zambrano">
-                            GitHub
-                        </a>
-                    </li>
+                    <p>
+                        Perfiles profesionales y canal de contacto
+                        para proyectos o colaboración.
+                    </p>
 
-                    <li>
-                        <a href="#" aria-label="LinkedIn de Jefferson Zambrano">
-                            LinkedIn
-                        </a>
-                    </li>
+                    <ul class="contact-links">
+                        <li>
+                            <a href="#" aria-label="GitHub de Jefferson Zambrano">
+                                GitHub
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="#" aria-label="Correo de Jefferson Zambrano">
-                            Correo
-                        </a>
-                    </li>
-                </ul>
-            </aside>
+                        <li>
+                            <a href="#" aria-label="LinkedIn de Jefferson Zambrano">
+                                LinkedIn
+                            </a>
+                        </li>
 
-            <form>
-                <div>
-                    <label for="nombre">Nombre</label>
+                        <li>
+                            <a href="#" aria-label="Correo de Jefferson Zambrano">
+                                Correo
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
 
-                    <input type="text" id="nombre" name="nombre" autocomplete="name">
-                </div>
+                <form>
+                    <div>
+                        <label for="nombre">Nombre</label>
 
-                <div>
-                    <label for="correo">Correo electrónico</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name">
+                    </div>
 
-                    <input type="email" id="correo" name="correo" autocomplete="email">
-                </div>
+                    <div>
+                        <label for="correo">Correo electrónico</label>
 
-                <div>
-                    <label for="mensaje">Mensaje</label>
+                        <input type="email" id="correo" name="correo" autocomplete="email">
+                    </div>
 
-                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-                </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
 
-                <button type="submit">
-                    Enviar mensaje
-                </button>
-            </form>
+                        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="button button--primary">
+                        Enviar mensaje
+                    </button>
+                </form>
+
+            </div>
         </section>
 
     </main>
 
 
     <footer>
-        <p>
-            <strong>Jefferson Antonio Zambrano Jama</strong>
-        </p>
+        <div class="footer-inner">
+            <p>
+                <strong>Jefferson Antonio Zambrano Jama</strong>
+            </p>
 
-        <p>
-            Desarrollado con HTML5, CSS3 y JavaScript.
-        </p>
+            <p>
+                Desarrollado con HTML5, CSS3 y JavaScript.
+            </p>
 
-        <p>
-            &copy; 2026 Jefferson Zambrano.
-        </p>
+            <p class="footer-copy">
+                &copy; 2026 Jefferson Zambrano.
+            </p>
+        </div>
     </footer>
 
 
