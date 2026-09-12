@@ -78,6 +78,11 @@ section article + article {
     margin-top: var(--space-lg);
 }
 
+.skills-grid > article,
+.projects-grid > article {
+    margin-top: 0;
+}
+
 section aside {
     margin-top: var(--space-xl);
 }
