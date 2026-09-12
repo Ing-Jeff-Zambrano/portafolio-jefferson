@@ -34,6 +34,10 @@ body > header nav ul {
     gap: var(--space-lg);
 }
 
+.nav-toggle {
+    display: none;
+}
+
 
 /* ---------- MAIN ---------- */
 
