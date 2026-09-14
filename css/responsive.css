@@ -205,4 +205,8 @@
     .ds-color-grid {
         grid-template-columns: minmax(0, 1fr);
     }
+
+    .modal {
+        padding: var(--space-lg);
+    }
 }

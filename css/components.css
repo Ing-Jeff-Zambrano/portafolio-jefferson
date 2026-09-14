@@ -507,3 +507,144 @@ textarea:focus-visible {
 .ds-sample-card {
     margin: 0;
 }
+
+
+/* ---------- MODAL ---------- */
+
+.modal-overlay {
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--space-lg);
+
+    background-color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+
+.modal-overlay.is-open {
+    display: flex;
+}
+
+.modal {
+    box-sizing: border-box;
+    width: min(100%, 40rem);
+    max-height: min(90vh, 45rem);
+    overflow-y: auto;
+
+    padding: var(--space-xl);
+
+    color: var(--color-text);
+    background-color: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.modal:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+.modal__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-md);
+
+    margin-bottom: var(--space-lg);
+}
+
+.modal__header h2 {
+    margin-bottom: 0;
+}
+
+.modal__close {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 44px;
+    min-height: 44px;
+    padding: var(--space-sm);
+}
+
+.modal__close svg {
+    width: var(--font-size-xl);
+    height: var(--font-size-xl);
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.modal__status {
+    margin-bottom: var(--space-md);
+}
+
+.modal__body {
+    display: grid;
+    gap: var(--space-lg);
+
+    margin-bottom: var(--space-lg);
+}
+
+.modal__body p {
+    margin-bottom: 0;
+}
+
+.modal__tags {
+    margin-bottom: var(--space-lg);
+}
+
+.modal__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+
+    margin-bottom: var(--space-lg);
+}
+
+.modal .button--secondary {
+    width: auto;
+}
+
+
+/* ---------- FORM FEEDBACK ---------- */
+
+.field-error {
+    margin-top: var(--space-xs);
+    margin-bottom: 0;
+
+    color: var(--color-error);
+    font-size: var(--font-size-sm);
+}
+
+.form-success {
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md);
+
+    color: var(--color-success);
+    background-color: var(--color-success-soft);
+
+    border-radius: var(--radius-md);
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border-color: var(--color-error);
+}
+
+input[aria-invalid="true"]:focus,
+textarea[aria-invalid="true"]:focus {
+    border-color: var(--color-error);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-error) 22%, transparent);
+}

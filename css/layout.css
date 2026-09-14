@@ -10,6 +10,10 @@ body > header {
     background-color: var(--color-surface);
 
     border-bottom: 1px solid var(--color-border);
+
+    transition:
+        background-color var(--transition-base),
+        border-color var(--transition-base);
 }
 
 body > header nav {
@@ -47,8 +51,54 @@ body > header nav ul {
     object-fit: contain;
 }
 
+.theme-toggle,
+.nav-toggle {
+    align-items: center;
+    justify-content: center;
+
+    min-width: 44px;
+    min-height: 44px;
+    padding: var(--space-sm);
+}
+
+.theme-toggle {
+    display: inline-flex;
+}
+
 .nav-toggle {
     display: none;
+}
+
+.theme-toggle svg,
+.nav-toggle svg {
+    width: var(--font-size-xl);
+    height: var(--font-size-xl);
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.theme-toggle__icon,
+.nav-toggle__icon {
+    display: none;
+}
+
+html:not([data-theme="dark"]) .theme-toggle__icon--moon,
+html[data-theme="dark"] .theme-toggle__icon--sun {
+    display: block;
+}
+
+.theme-toggle__icon--moon {
+    fill: currentColor;
+    stroke: none;
+}
+
+.nav-toggle:not([aria-expanded="true"]) .nav-toggle__icon--open,
+.nav-toggle[aria-expanded="true"] .nav-toggle__icon--close {
+    display: block;
 }
 
 

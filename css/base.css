@@ -18,6 +18,10 @@ body {
 
     color: var(--color-text);
     background-color: var(--color-background);
+
+    transition:
+        color var(--transition-base),
+        background-color var(--transition-base);
 }
 
 h1,
